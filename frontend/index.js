@@ -109,7 +109,7 @@ const submitData = async () => {
         } else {
             const response = await axios.put(`${BASE_URL}/users/${selectId}`, userData);
             console.log(response.data);
-            message = 'แก้ไขข้อมูลสำเร็จจ';
+            message = 'แก้ไขข้อมูลสำเร็จ';
         }
 
         messageDOM.innerText = message;
