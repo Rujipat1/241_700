@@ -27,7 +27,7 @@ const loadData = async () => {
             try{
                 await axios.delete(`${BASE_URL}/users/${id}`);
                 //http://localhost:8000/users/4
-                loadData(); // โหลดข้อมูลใหม่หลังจากลบสำเร็จ
+                loadData(); //โหลดข้อมูลใหม่หลังจากลบสำเร็จ
             }catch(error){
                 console.error("Error deleting user:", error);
             }    
